@@ -8,3 +8,10 @@
 *.lst
 *.mcppi
 *.user
+*.ini
+*.cfg
+*.dct
+*.hex
+*.log
+*.txt
+*.dic
