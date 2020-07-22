@@ -13,7 +13,7 @@ extern unsigned char EEPROM_flag = 0;
 void button_setting (){
     setting_break ++;
     button_counter ++;
-        //checking the buttons state every 100ms
+    //checking the buttons state every 100ms
     if (button_counter == BUTTON_CHECK_TIME){
         button_counter = 0;
         if ((up_button_PORT ==0) && (set_temp <75) ){
@@ -25,7 +25,7 @@ void button_setting (){
            set_temp -= 5;                        //each down press is -5
         }
     }
-        //after 5sec, break the setting mode and store the set temp in EEPROM 
+    //after 5sec, break the setting mode and store the set temp in EEPROM 
     if (setting_break == SETTING_TIMEOUT) {
         setting_break = 0;
         mode = normal_mode;
@@ -35,7 +35,7 @@ void button_setting (){
 
 void seg_blink(){
     seg_blink_counter ++;
-        //keep the 7-seg displaying during the first sec
+    //keep the 7-seg displaying during the first sec
     if (seg_blink_counter < SEG_DISPLAY_ON){
         Sensor_Display (set_temp);
     }
