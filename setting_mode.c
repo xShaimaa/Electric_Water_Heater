@@ -3,12 +3,12 @@
 #include "Temp_Sensor_Display.h"
 
 //variables
-unsigned char button_counter;                //counter to check the states of the buttons every 100ms 
-unsigned char seg_blink_counter;        //counter to blink the 7-segments every 1sec
-unsigned int setting_break;                        //counter used to break the setting mode if 5sec passed without pressing a button
-extern unsigned char set_temp;                //variable used to store the set temp. in the setting mode
-extern mode_t mode;                                        //data type that holds the mode state of the system
-extern unsigned char EEPROM_flag = 0;
+unsigned char button_counter;               //counter to check the states of the buttons every 100ms 
+unsigned char seg_blink_counter;            //counter to blink the 7-segments every 1sec
+unsigned int setting_break;                 //counter used to break the setting mode if 5sec passed without pressing a button
+extern unsigned char set_temp;              //variable used to store the set temp. in the setting mode
+extern mode_t mode;                         //data type that holds the mode state of the system
+extern unsigned char EEPROM_flag = 0;       //flag to be set after setting  new temp.
 
 void button_setting (){
     setting_break ++;
