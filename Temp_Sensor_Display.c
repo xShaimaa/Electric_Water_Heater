@@ -58,7 +58,6 @@ unsigned char Temp_samples (){
     return Avg ;
 }
 
-//a function that returns the hex value equvilant for certin num.
 unsigned char Seg_Values (unsigned char v)
 {
     //determine the hex value for the 7seg. to display each num.
@@ -99,7 +98,6 @@ unsigned char Seg_Values (unsigned char v)
     }
 }
 
-//a function that is used to display the tempreture sensor reading on the 7seg.
 void Sensor_Display (int temp){
     selection_counter ++;
     //getting the number that is to be displayed on each 7seg.
