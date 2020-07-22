@@ -1,17 +1,17 @@
 #include "Temp_Sensor_Display.h"
 
 //variables
-unsigned char temp_read,                                //
-              ones, tens,                                //
-              selection_counter,                 //
-              temp_counter,                                //
-              Temp_Av[10],                                //
-              Temp_Req,                                        //
-              Temp_Avg,                                        //
-              Avg_counter = 0,                        //
-              Temp,
-              Avg;                                                //
-unsigned int  sum;                                       //
+unsigned char temp_read,                                 //variable to store the current temp read
+              ones, tens,                                //variables used to split the displayed temp to ones and tens 
+              selection_counter,                         //counter to swwich between the 7-seg selection pins
+              temp_counter,                              //counter to fill the array to store the samples
+              Temp_Av[10],                               //array to store the temp samples
+              Temp_Req,                                  //the required temp that is to be displayed
+              Temp_Avg,                                  //variable used to store the current temp average
+              Avg_counter = 0,                           //counter used to take the temp average for the last 10 samples
+              Temp,                                      //variable used to store the temp sample
+              Avg;                                       //variable to store the average of the last 10 temp samples
+unsigned int  sum;                                       //aiable to sum the last 10 temp samples
 
 void Seg_Init(){
     //PORTD is output for the 7-seg
@@ -50,10 +50,10 @@ unsigned char Temp_samples (){
         Temp_Av[Avg_counter] = Temp;
         Avg_counter ++;
         if (Avg_counter == TEMP_SAMPLE) {
-                        Avg_counter = 0; 
-                }
+            Avg_counter = 0; 
+        }
         average ();
-            temp_counter = 0;
+        temp_counter = 0;
     }
     return Avg ;
 }
