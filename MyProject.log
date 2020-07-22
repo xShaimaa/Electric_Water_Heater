@@ -1,0 +1,24 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -DL -O11111114 -fo8 -N"C:\Users\A7mad\Desktop\shimo\pic\PICSimLab\Water_Heater\MyProject.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\A7mad\Desktop\shimo\pic\PICSimLab\Water_Heater\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -IP"C:\Users\A7mad\Desktop\shimo\pic\PICSimLab\Water_Heater\" "Temp_Sensor_Display.c" "mian.c" "TMR1.c" "normal_mode.c" "setting_mode.c" "EEPROM.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_ADC_A_C.mcl" "__Lib_I2C_c34.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	temp_sensor_display.h
+diagnostics: 121	123	Compiled Successfully	Temp_Sensor_Display.c
+hint: 13	1354	 warning: The macro is redefined     #define BUTTON_CHECK_TIME 20     from C:/Users/A7mad/Desktop/shimo/pic/PICSimLab/Water_Heater/mian.c: 6:    #include "main.h"     previously macro "BUTTON_CHECK_TIME" defined as: #define BUTTON_CHECK_TIME  10 	c:\users\a7mad\desktop\shimo\pic\picsimlab\water_heater\main.h
+diagnostics: 0	122	Compilation Started	temp_sensor_display.h
+diagnostics: 77	123	Compiled Successfully	mian.c
+diagnostics: 0	122	Compilation Started	tmr1.h
+diagnostics: 11	123	Compiled Successfully	TMR1.c
+hint: 13	1354	 warning: The macro is redefined     #define BUTTON_CHECK_TIME 20     from C:/Users/A7mad/Desktop/shimo/pic/PICSimLab/Water_Heater/normal_mode.c: 2:    #include "main.h"     previously macro "BUTTON_CHECK_TIME" defined as: #define BUTTON_CHECK_TIME  10 	c:\users\a7mad\desktop\shimo\pic\picsimlab\water_heater\main.h
+diagnostics: 0	122	Compilation Started	normal_mode.h
+diagnostics: 76	123	Compiled Successfully	normal_mode.c
+diagnostics: 0	122	Compilation Started	setting_mode.h
+warning: 11	1504	Initialization of extern object 'EEPROM_flag'	setting_mode.c
+diagnostics: 52	123	Compiled Successfully	setting_mode.c
+diagnostics: 0	122	Compilation Started	eeprom.h
+diagnostics: 21	123	Compiled Successfully	EEPROM.c
+diagnostics: 0	127	All files Compiled in 687 ms	 
+hint: 0	1144	Used RAM (bytes): 86 (24%)  Free RAM (bytes): 266 (76%)	Used RAM (bytes): 86 (24%)  Free RAM (bytes): 266 (76%)
+hint: 0	1144	Used ROM (program words): 1830 (22%)  Free ROM (program words): 6362 (78%)	Used ROM (program words): 1830 (22%)  Free ROM (program words): 6362 (78%)
+diagnostics: 0	125	Project Linked Successfully	MyProject.mcppi
+diagnostics: 0	128	Linked in 125 ms	 
+diagnostics: 0	129	Project 'MyProject.mcppi' completed: 843 ms	 
+diagnostics: 0	103	Finished successfully: 22 Jul 2020, 18:10:22	MyProject.mcppi

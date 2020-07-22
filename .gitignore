@@ -1,0 +1,10 @@
+*.asm
+*.cp
+*.mcl
+*.bmk
+*.brk
+*.dbg
+*.dlt
+*.lst
+*.mcppi
+*.user
